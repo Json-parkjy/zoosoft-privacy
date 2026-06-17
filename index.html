@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy - ZooSoft / 개인정보처리방침</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300..700&family=Inter:wght@300..700&display=swap" rel="stylesheet">
+<style>
+:root,[data-theme="light"]{
+  --color-bg:#f7f6f2;--color-surface:#f9f8f5;--color-surface-2:#fbfbf9;
+  --color-divider:#dcd9d5;--color-border:#d4d1ca;
+  --color-text:#28251d;--color-text-muted:#7a7974;--color-text-faint:#bab9b4;
+  --color-primary:#01696f;--color-primary-hover:#0c4e54;
+  --radius-sm:0.375rem;--radius-md:0.5rem;--radius-lg:0.75rem;
+  --space-2:0.5rem;--space-3:0.75rem;--space-4:1rem;--space-6:1.5rem;
+  --space-8:2rem;--space-10:2.5rem;--space-12:3rem;
+  --text-xs:clamp(0.72rem,0.68rem + 0.2vw,0.82rem);
+  --text-sm:clamp(0.875rem,0.82rem + 0.28vw,1rem);
+  --text-base:clamp(0.95rem,0.9rem + 0.25vw,1.1rem);
+  --text-lg:clamp(1.1rem,1rem + 0.5vw,1.4rem);
+  --text-xl:clamp(1.5rem,1.2rem + 1.25vw,2.1rem);
+  --shadow-sm:0 1px 2px oklch(0.2 0.01 80/0.06);
+  --shadow-md:0 4px 12px oklch(0.2 0.01 80/0.08);
+  --font-en:'Inter',sans-serif;--font-ko:'Noto Sans KR','Inter',sans-serif;
+}
+[data-theme="dark"]{
+  --color-bg:#171614;--color-surface:#1c1b19;--color-surface-2:#201f1d;
+  --color-divider:#262523;--color-border:#393836;
+  --color-text:#cdccca;--color-text-muted:#797876;--color-text-faint:#5a5957;
+  --color-primary:#4f98a3;--color-primary-hover:#227f8b;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-font-smoothing:antialiased;scroll-behavior:smooth}
+body{min-height:100dvh;line-height:1.7;font-family:var(--font-en);font-size:var(--text-base);color:var(--color-text);background:var(--color-bg);transition:background 0.2s,color 0.2s}
+h1,h2,h3{text-wrap:balance;line-height:1.25}
+p,li{text-wrap:pretty;max-width:72ch}
+
+/* HEADER */
+header{background:var(--color-surface);border-bottom:1px solid oklch(from var(--color-text) l c h/0.08);padding:var(--space-4) var(--space-6);display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:10;box-shadow:var(--shadow-sm)}
+.logo{display:flex;align-items:center;gap:var(--space-3);text-decoration:none;color:var(--color-text)}
+.logo-name{font-size:var(--text-sm);font-weight:700;letter-spacing:-0.01em}
+.logo-name span{color:var(--color-primary)}
+.header-actions{display:flex;gap:var(--space-2);align-items:center}
+.btn-sm{background:none;border:1px solid oklch(from var(--color-text) l c h/0.15);border-radius:var(--radius-md);padding:var(--space-2) var(--space-3);cursor:pointer;color:var(--color-text-muted);font-size:var(--text-xs);font-family:inherit;display:flex;align-items:center;gap:var(--space-2);transition:all 0.18s}
+.btn-sm:hover{border-color:var(--color-primary);color:var(--color-primary)}
+.btn-sm.active{background:color-mix(in oklch,var(--color-primary) 10%,var(--color-surface));border-color:var(--color-primary);color:var(--color-primary)}
+
+/* LANG TABS */
+.lang-tabs{display:flex;background:var(--color-surface);border-bottom:1px solid var(--color-divider);position:sticky;top:57px;z-index:9}
+.lang-tab{flex:1;max-width:180px;padding:var(--space-3) var(--space-6);font-size:var(--text-sm);font-family:inherit;font-weight:600;background:none;border:none;border-bottom:2px solid transparent;cursor:pointer;color:var(--color-text-muted);transition:all 0.18s}
+.lang-tab.active{color:var(--color-primary);border-bottom-color:var(--color-primary)}
+.lang-tab:hover:not(.active){color:var(--color-text)}
+
+/* CONTENT */
+.lang-section{display:none}
+.lang-section.active{display:block}
+main{max-width:760px;margin-inline:auto;padding:var(--space-12) var(--space-6)}
+.page-header{margin-bottom:var(--space-12);padding-bottom:var(--space-8);border-bottom:1px solid var(--color-divider)}
+.page-header h1{font-size:var(--text-xl);font-weight:700;margin-bottom:var(--space-3)}
+.meta{font-size:var(--text-sm);color:var(--color-text-muted);display:flex;gap:var(--space-4);flex-wrap:wrap}
+.badge{display:inline-flex;align-items:center;background:color-mix(in oklch,var(--color-primary) 10%,var(--color-surface));color:var(--color-primary);padding:2px var(--space-3);border-radius:9999px;font-size:var(--text-xs);font-weight:600}
+section{margin-bottom:var(--space-8)}
+section h2{font-size:var(--text-lg);font-weight:700;margin-bottom:var(--space-4);padding-left:var(--space-4);border-left:3px solid var(--color-primary)}
+.card{background:var(--color-surface);border:1px solid oklch(from var(--color-text) l c h/0.07);border-radius:var(--radius-lg);padding:var(--space-6);margin-bottom:var(--space-4);box-shadow:var(--shadow-sm)}
+.card p,.card li{font-size:var(--text-sm);color:var(--color-text-muted);line-height:1.8}
+.card ul{padding-left:var(--space-6);list-style:disc}
+.card ul li{margin-bottom:var(--space-2)}
+.card h3{font-size:var(--text-sm);font-weight:700;color:var(--color-text);margin-bottom:var(--space-3)}
+.card a{color:var(--color-primary);text-decoration:none}
+.card a:hover{text-decoration:underline}
+.highlight-box{background:color-mix(in oklch,var(--color-primary) 6%,var(--color-surface));border:1px solid color-mix(in oklch,var(--color-primary) 20%,var(--color-border));border-radius:var(--radius-md);padding:var(--space-4) var(--space-6)}
+.highlight-box p{font-size:var(--text-sm);color:var(--color-text)}
+.ccpa-box{background:color-mix(in oklch,#b45309 6%,var(--color-surface));border:1px solid color-mix(in oklch,#b45309 25%,var(--color-border));border-radius:var(--radius-md);padding:var(--space-4) var(--space-6);margin-bottom:var(--space-4)}
+.ccpa-box .tag{font-size:var(--text-xs);font-weight:700;color:#b45309;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:var(--space-2)}
+.ccpa-box p,.ccpa-box li{font-size:var(--text-sm);color:var(--color-text-muted);line-height:1.8}
+.ccpa-box ul{padding-left:var(--space-6);list-style:disc}
+.ccpa-box ul li{margin-bottom:var(--space-2)}
+.ko section h2,.ko .card p,.ko .card li,.ko .highlight-box p,.ko .card h3,.ko .page-header h1{font-family:var(--font-ko)}
+
+footer{border-top:1px solid var(--color-divider);padding:var(--space-8) var(--space-6);text-align:center;color:var(--color-text-faint);font-size:var(--text-xs)}
+footer a{color:var(--color-primary);text-decoration:none}
+footer a:hover{text-decoration:underline}
+</style>
+</head>
+<body>
+<header>
+  <a class="logo" href="#">
+    <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+      <rect width="28" height="28" rx="7" fill="currentColor" opacity="0.08"/>
+      <circle cx="10" cy="10" r="4" stroke="currentColor" stroke-width="2"/>
+      <circle cx="18" cy="10" r="4" stroke="currentColor" stroke-width="2"/>
+      <path d="M6 18h16M9 18v3M14 18v4M19 18v3" stroke="var(--color-primary)" stroke-width="2" stroke-linecap="round"/>
+    </svg>
+    <span class="logo-name">Zoo<span>Soft</span></span>
+  </a>
+  <div class="header-actions">
+    <button class="btn-sm" data-theme-toggle>
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+      Dark
+    </button>
+  </div>
+</header>
+
+<div class="lang-tabs">
+  <button class="lang-tab active" data-lang="en">🇺🇸 English</button>
+  <button class="lang-tab" data-lang="ko">🇰🇷 한국어</button>
+</div>
+
+<!-- ENGLISH -->
+<div class="lang-section active" id="section-en">
+<main>
+  <div class="page-header">
+    <div class="meta" style="margin-bottom:var(--space-3)"><span class="badge">Privacy Policy</span></div>
+    <h1>Privacy Policy</h1>
+    <div class="meta">
+      <span>ZooSoft</span><span>Neon Block Master</span><span>Last updated: June 17, 2026</span>
+    </div>
+  </div>
+
+  <section>
+    <div class="highlight-box">
+      <p>ZooSoft ("we," "us," or "our") operates the mobile game <strong>Neon Block Master</strong>. This Privacy Policy explains how we collect, use, and protect information when you use our app. By using the app, you agree to this policy.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Information We Collect</h2>
+    <div class="card">
+      <h3>Automatically Collected (via Advertising)</h3>
+      <p style="margin-bottom:var(--space-3)">We use Google AdMob to serve ads. AdMob may automatically collect:</p>
+      <ul>
+        <li>Advertising ID (Android Advertising ID)</li>
+        <li>Device information (model, OS version, screen size)</li>
+        <li>App usage data (ad impressions, clicks)</li>
+        <li>Approximate location (based on IP address)</li>
+        <li>Crash and performance data</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>What We Do NOT Collect</h3>
+      <p>We do not collect your name, email, phone number, payment information, or any other personally identifiable information directly.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>How We Use Information</h2>
+    <div class="card">
+      <ul>
+        <li>To provide and operate the game service</li>
+        <li>To serve personalized and non-personalized ads (Google AdMob)</li>
+        <li>To analyze app performance and improve user experience</li>
+        <li>To diagnose and fix technical issues</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>Third-Party Services</h2>
+    <div class="card">
+      <h3>Google AdMob</h3>
+      <p style="margin-bottom:var(--space-3)">Our app uses Google AdMob, provided by Google LLC, to display advertisements. AdMob may collect and process data in accordance with Google's privacy policy.</p>
+      <p>Google Privacy Policy: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a></p>
+    </div>
+  </section>
+
+  <section>
+    <h2>California Privacy Rights (CCPA)</h2>
+    <div class="ccpa-box">
+      <div class="tag">CCPA — California Residents</div>
+      <p style="margin-bottom:var(--space-3)">If you are a California resident, you have the following rights under the California Consumer Privacy Act (CCPA):</p>
+      <ul>
+        <li><strong>Right to Know:</strong> You may request information about the personal data we collect and how it is used.</li>
+        <li><strong>Right to Delete:</strong> You may request deletion of your personal data.</li>
+        <li><strong>Right to Opt-Out:</strong> You may opt out of the sale of personal information. We do not sell your personal information.</li>
+        <li><strong>Right to Non-Discrimination:</strong> You will not be discriminated against for exercising your CCPA rights.</li>
+      </ul>
+      <p style="margin-top:var(--space-3)">To exercise these rights, contact us at: <a href="mailto:matoz1122@gmail.com">matoz1122@gmail.com</a></p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Children's Privacy</h2>
+    <div class="card">
+      <p>Our app is not directed to children under the age of 13. We do not knowingly collect personal information from children under 13. If you believe a child has provided us with personal information, please contact us and we will delete it immediately.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Your Choices</h2>
+    <div class="card">
+      <ul>
+        <li><strong>Opt out of personalized ads:</strong> Go to Settings → Privacy → Ads → Reset or delete your Advertising ID</li>
+        <li><strong>Data deletion requests:</strong> Contact us at the email below</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>Data Retention</h2>
+    <div class="card">
+      <p>Ad-related data is managed according to Google AdMob's data retention policies. Game data stored locally on your device is deleted when you uninstall the app.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Changes to This Policy</h2>
+    <div class="card">
+      <p>We may update this Privacy Policy from time to time. We will notify you of any changes by updating the "Last updated" date at the top of this page. Continued use of the app after changes constitutes your acceptance of the updated policy.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Contact Us</h2>
+    <div class="card">
+      <h3>Privacy Inquiries</h3>
+      <p><strong>ZooSoft</strong><br>
+      Email: <a href="mailto:matoz1122@gmail.com">matoz1122@gmail.com</a></p>
+    </div>
+  </section>
+</main>
+</div>
+
+<!-- KOREAN -->
+<div class="lang-section ko" id="section-ko">
+<main>
+  <div class="page-header">
+    <div class="meta" style="margin-bottom:var(--space-3)"><span class="badge">개인정보처리방침</span></div>
+    <h1>개인정보처리방침</h1>
+    <div class="meta">
+      <span>ZooSoft</span><span>Neon Block Master</span><span>최종 수정일: 2026년 6월 17일</span>
+    </div>
+  </div>
+
+  <section>
+    <div class="highlight-box">
+      <p>ZooSoft(이하 "당사")는 이용자의 개인정보를 중요하게 생각하며, 「개인정보 보호법」 및 관련 법령을 준수합니다. 본 방침은 모바일 게임 <strong>Neon Block Master</strong>에 적용됩니다.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>수집하는 정보</h2>
+    <div class="card">
+      <h3>자동 수집 정보 (광고 서비스)</h3>
+      <p style="margin-bottom:var(--space-3)">본 앱은 Google AdMob 광고 서비스를 사용하며, 광고 제공을 위해 다음 정보가 자동으로 수집될 수 있습니다:</p>
+      <ul>
+        <li>광고 식별자 (Android 광고 ID)</li>
+        <li>기기 정보 (모델, OS 버전)</li>
+        <li>앱 사용 데이터 (광고 노출 및 클릭 정보)</li>
+        <li>대략적인 위치 정보 (IP 주소 기반)</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>직접 수집하지 않는 정보</h3>
+      <p>당사는 이름, 이메일, 전화번호, 결제 정보 등 개인 식별 정보를 직접 수집하지 않습니다.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>정보 이용 목적</h2>
+    <div class="card">
+      <ul>
+        <li>게임 서비스 제공 및 운영</li>
+        <li>맞춤형 광고 제공 (Google AdMob)</li>
+        <li>앱 성능 분석 및 개선</li>
+        <li>오류 진단 및 수정</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>제3자 서비스</h2>
+    <div class="card">
+      <h3>Google AdMob</h3>
+      <p style="margin-bottom:var(--space-3)">본 앱은 Google LLC가 제공하는 AdMob 광고 서비스를 사용합니다. Google의 개인정보처리방침: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a></p>
+    </div>
+  </section>
+
+  <section>
+    <h2>아동 개인정보 보호</h2>
+    <div class="card">
+      <p>본 앱은 만 14세 미만 아동을 대상으로 하지 않으며, 아동의 개인정보를 의도적으로 수집하지 않습니다.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>이용자 권리</h2>
+    <div class="card">
+      <ul>
+        <li>광고 맞춤화 거부: 설정 → 개인정보 보호 → 광고 → 광고 ID 재설정/삭제</li>
+        <li>개인정보 열람·삭제 요청: 아래 이메일 문의</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>방침 변경 안내</h2>
+    <div class="card">
+      <p>본 방침은 관련 법령 변경 또는 서비스 변경에 따라 업데이트될 수 있으며, 변경 시 본 페이지를 통해 안내합니다.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>문의</h2>
+    <div class="card">
+      <p><strong>ZooSoft</strong><br>이메일: <a href="mailto:matoz1122@gmail.com">matoz1122@gmail.com</a></p>
+    </div>
+  </section>
+</main>
+</div>
+
+<footer>
+  <p>&copy; 2026 ZooSoft. All rights reserved. &nbsp;|&nbsp; <a href="mailto:matoz1122@gmail.com">matoz1122@gmail.com</a></p>
+</footer>
+
+<script>
+(function(){
+  // Theme
+  const t=document.querySelector('[data-theme-toggle]'),r=document.documentElement;
+  let d=localStorage.getItem('theme')||(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light');
+  r.setAttribute('data-theme',d);
+  t&&t.addEventListener('click',()=>{
+    d=d==='dark'?'light':'dark';
+    r.setAttribute('data-theme',d);
+    localStorage.setItem('theme',d);
+    t.innerHTML=d==='dark'
+      ?'<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg> Light'
+      :'<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg> Dark';
+  });
+
+  // Lang tabs
+  document.querySelectorAll('.lang-tab').forEach(btn=>{
+    btn.addEventListener('click',()=>{
+      document.querySelectorAll('.lang-tab').forEach(b=>b.classList.remove('active'));
+      document.querySelectorAll('.lang-section').forEach(s=>s.classList.remove('active'));
+      btn.classList.add('active');
+      document.getElementById('section-'+btn.dataset.lang).classList.add('active');
+      document.documentElement.lang=btn.dataset.lang;
+    });
+  });
+})();
+</script>
+</body>
+</html>
